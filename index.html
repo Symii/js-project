@@ -5,31 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mapa z Formularzem</title>
     <link rel="stylesheet" href="src/scss/main.scss" />
+    <script src="src/js/main.js" defer></script>
   </head>
   <body>
-    <div id="map"></div>
-    <div id="details-form">
-      <h2>Szczegóły Miejsca</h2>
-      <form>
-        <div>
-          <label for="place-name">Nazwa:</label>
-          <input type="text" id="place-name" name="place-name" />
-        </div>
-        <div>
-          <label for="place-description">Opis:</label>
-          <textarea id="place-description" name="place-description"></textarea>
-        </div>
-        <div>
-          <label for="place-coordinates">Koordynaty:</label>
-          <input
-            type="text"
-            id="place-coordinates"
-            name="place-coordinates"
-            readonly
-          />
-        </div>
-      </form>
-    </div>
-    <script src="src/js/main.js" defer></script>
+    <section class="map-container">
+      <div id="map"></div>
+      <div id="details-form">
+        <h2>Szczegóły Miejsca</h2>
+        <form>
+          <div>
+            <label for="place-name">Nazwa:</label>
+            <input type="text" id="place-name" name="place-name" />
+          </div>
+          <div>
+            <label for="place-description">Opis:</label>
+            <textarea
+              id="place-description"
+              name="place-description"
+            ></textarea>
+          </div>
+          <div>
+            <label for="place-coordinates">Koordynaty:</label>
+            <input
+              type="text"
+              id="place-coordinates"
+              name="place-coordinates"
+              readonly
+            />
+          </div>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
